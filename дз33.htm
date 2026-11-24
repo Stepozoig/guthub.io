@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа № 33. Услуги хостинга</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            color: #222;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        h1 {
+            font-size: 22px;
+            color: #1a4b84;
+            border-bottom: 2px solid #1a4b84;
+            padding-bottom: 8px;
+        }
+        h2 {
+            font-size: 18px;
+            color: #1a4b84;
+            margin-top: 28px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #b8cce4;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #ff6600;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        tr:nth-child(even) td {
+            background-color: #fff5ee;
+        }
+        td:first-child {
+            font-weight: bold;
+            background-color: #ffe6d5;
+            width: 30%;
+        }
+        .conclusion {
+            background-color: #fff0e6;
+            border-left: 4px solid #2c5e9e;
+            padding: 12px 16px;
+            margin-bottom: 24px;
+        }
+        .conclusion strong {
+            color: #1a4b84;
+        }
+        ol {
+            margin: 8px 0 0 20px;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Практическая работа № 33. Услуги хостинга</h1>
+
+    <h2>1. Сравнение бесплатных хостингов</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Критерий сравнения</th>
+                <th>uCoz</th>
+                <th>Freehost.in.ua</th>
+                <th>0fees.net (англояз.)</th>
+                <th>ByetHost (англояз.)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Место, выделяемое под сайт</td>
+                <td>от 400 МБ (растет со временем)</td>
+                <td>100 МБ</td>
+                <td>300 МБ</td>
+                <td>1 ГБ (1000 МБ)</td>
+            </tr>
+            <tr>
+                <td>Ограничение трафика</td>
+                <td>Не ограничено</td>
+                <td>Не ограничено</td>
+                <td>10 ГБ / мес.</td>
+                <td>50 ГБ / мес.</td>
+            </tr>
+            <tr>
+                <td>Операционная система</td>
+                <td>Linux (Unix-подобная)</td>
+                <td>Linux</td>
+                <td>Linux</td>
+                <td>Linux</td>
+            </tr>
+            <tr>
+                <td>Наличие CMS</td>
+                <td>Собственная модульная CMS</td>
+                <td>Нет предустановленных (возможна ручная)</td>
+                <td>Автоустановщик (WordPress, Joomla и др.)</td>
+                <td>Автоустановщик Softaculous (более 400 CMS)</td>
+            </tr>
+            <tr>
+                <td>Возможность использования PHP</td>
+                <td>Ограниченно (только на платных тарифах или через API)</td>
+                <td>Да (PHP 5/7)</td>
+                <td>Да</td>
+                <td>Да (PHP 7/8)</td>
+            </tr>
+            <tr>
+                <td>Возможность использования СУБД MySQL</td>
+                <td>Нет (своя база данных модулей)</td>
+                <td>Да (1 база)</td>
+                <td>Да (до 3–5 баз)</td>
+                <td>Да (до 5 баз)</td>
+            </tr>
+            <tr>
+                <td>Наличие FTP</td>
+                <td>Да (с ограничениями на старте)</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>Да</td>
+            </tr>
+            <tr>
+                <td>Количество почтовых ящиков</td>
+                <td>1 ящик (вида имя@домен)</td>
+                <td>Нет / через сторонние сервисы</td>
+                <td>До 5 ящиков</td>
+                <td>До 5 ящиков</td>
+            </tr>
+            <tr>
+                <td>Наличие рекламы</td>
+                <td>Да (рекламный баннер системы)</td>
+                <td>Нет или минимальная</td>
+                <td>Нет</td>
+                <td>Нет</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="conclusion">
+        <strong>Выводы:</strong> Бесплатные хостинги хорошо подходят для обучения, тестирования скриптов и создания небольших личных страниц или визиток. Однако они имеют существенные ограничения: малый объем дискового пространства, лимиты на трафик или нагрузку, принудительную рекламу (как на uCoz) и отсутствие гарантий стабильной работы. Зарубежные бесплатные хостинги (ByetHost, 0fees) часто предлагают более богатый технический функционал (поддержку PHP, MySQL и автоустановку CMS) без рекламы по сравнению с отечественными аналогами.
+    </div>
+
+    <h2>2. Сравнение минимальных тарифов платных хостингов</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Критерий сравнения</th>
+                <th>Sprinthost (тариф «X-1»)</th>
+                <th>McHost (тариф «Мак-3» / «Стартовый»)</th>
+                <th>Masterhost (тариф «Старт»)</th>
+                <th>RU-CENTER / nic.ru (тариф «Тариф 1»)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Место, выделяемое под сайт</td>
+                <td>2 ГБ (SSD)</td>
+                <td>3 ГБ (SSD)</td>
+                <td>5 ГБ (SSD)</td>
+                <td>10 ГБ (SSD)</td>
+            </tr>
+            <tr>
+                <td>Ограничение трафика</td>
+                <td>Не ограничено</td>
+                <td>Не ограничено</td>
+                <td>Не ограничено</td>
+                <td>Не ограничено</td>
+            </tr>
+            <tr>
+                <td>Операционная система</td>
+                <td>Linux</td>
+                <td>Linux</td>
+                <td>Linux (FreeBSD / Debian)</td>
+                <td>Linux</td>
+            </tr>
+            <tr>
+                <td>Наличие CMS</td>
+                <td>Да (автоустановка WordPress, Joomla, 1С-Битрикс и др.)</td>
+                <td>Да (автоустановка популярных CMS)</td>
+                <td>Да (автоустановка популярных CMS)</td>
+                <td>Да (автоустановка популярных CMS)</td>
+            </tr>
+            <tr>
+                <td>Возможность использования PHP</td>
+                <td>Да (выбор версий PHP 5.6 – 8.x)</td>
+                <td>Да (выбор версий PHP)</td>
+                <td>Да (выбор версий PHP)</td>
+                <td>Да (выбор версий PHP)</td>
+            </tr>
+            <tr>
+                <td>Возможность использования СУБД MySQL</td>
+                <td>Да (не ограничено в рамках места)</td>
+                <td>Да (1–3 базы данных)</td>
+                <td>Да (до 5 баз данных)</td>
+                <td>Да (до 5 баз данных)</td>
+            </tr>
+            <tr>
+                <td>Наличие FTP</td>
+                <td>Да (FTP / SFTP / SSH)</td>
+                <td>Да (FTP / SFTP / SSH)</td>
+                <td>Да (FTP / SSH)</td>
+                <td>Да (FTP / SFTP)</td>
+            </tr>
+            <tr>
+                <td>Количество почтовых ящиков</td>
+                <td>Опционально или безлимит на старших версиях</td>
+                <td>Не ограничено</td>
+                <td>Не ограничено</td>
+                <td>Не ограничено</td>
+            </tr>
+            <tr>
+                <td>Наличие рекламы</td>
+                <td>Нет</td>
+                <td>Нет</td>
+                <td>Нет</td>
+                <td>Нет</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Общие выводы</h2>
+    <div class="conclusion">
+        <strong>Ответ:</strong>
+        <ol>
+            <li><strong>Отсутствие рекламы и ограничения трафика.</strong> В отличие от бесплатных площадок, даже самый дешевый платный тариф полностью избавлен от сторонней рекламы и предоставляет безлимитный трафик.</li>
+            <li><strong>Полный технический стек.</strong> Платные хостинги гарантируют полноценную поддержку современных версий PHP, баз данных MySQL, протоколов безопасного доступа (SFTP, SSH) и удобную установку любых популярных CMS в один клик.</li>
+            <li><strong>Надежность и поддержка.</strong> На платных тарифах используются быстрые SSD-накопители, выполняется ежедневное автоматическое резервное копирование (бэкапы) и работает круглосуточная техническая поддержка, что делает их единственным подходящим вариантом для коммерческих, корпоративных и серьезных информационных проектов.</li>
+        </ol>
+    </div>
+
+</body>
+</html>
